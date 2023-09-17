@@ -3,7 +3,7 @@
 ML pipeline (python):
 1. Dataset organization. Aging, sex as well as common for all cohort genes will be considered for data analysis.
 2. Train/test splitting in relation 80%/20% with shuffling and stratification by outcome.
-3. As preprocessing the [robust scale procedure](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html) to reduce the effects of potential outliers. It will be applied after the train/test splitting to avoid data leakage.
+3. As preprocessing, for negative potential outliers effects, the [robust scale procedure](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html) will be considerd. It will be applied after the train/test splitting to avoid data leakage.
 4. To optimise the computational process  the number of potential parameters will reduced after correlational analysis (Spearman test), the threshhold for genes elimination being 0.8.
 5. [Removing features with low variance](https://scikit-learn.org/stable/modules/feature_selection.html#removing-features-with-low-variance) will be considered for feature selection.
 6. For outcome prediction we plan to apply Logistic regression, Random Forest, Support Vector Machine, LightGBM, XGBoost form [sklearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) library. For each model two options will be considered. First, the model with hyperparameters by default and the model after hyperparameters optimization in greedsearch procedure (cv = 5, the metric for optimization being recall or accuracy).
