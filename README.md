@@ -8,3 +8,6 @@ ML pipeline:
 5. For outcome prediction we plan to apply Logistic regression, Random Forest, Support Vector Machine, ..., ... [https://scikit-learn.org/stable/supervised_learning.html#supervised-learning] (https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) in condition of hyperparameters by default and using the greedsearch procedure (cv = 5, the metric for optimization being recall or accuracy). The better model from each pair (default and optimized models) will be considered for Staking alghorithm (), 
 7.
 8. Staking 
+
+
+This site was built using [GitHub Pages](https://pages.github.com/).
