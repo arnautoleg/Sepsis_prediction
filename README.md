@@ -5,11 +5,11 @@ ML pipeline (python):
 2. RobustScale procedure to reduce the effects of potential outliers.
 3. Train/test splitting in relation 80%/20% with shuffling and stratification by outcome.
 4. To optimise the computational process we will reduce the number of potential parameters throught multicollinearity procedure, considering Spearman test with threshhold 0.8.
-7. Feature selection will be performed using [SequentialFeatureSelector](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SequentialFeatureSelector.html#sklearn.feature_selection.SequentialFeatureSelector) or by [removing features with low variance](https://scikit-learn.org/stable/modules/feature_selection.html#removing-features-with-low-variance)
-8. For outcome prediction we plan to apply Logistic regression, Random Forest, Support Vector Machine, ..., ... [sklearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) library considering hyperparameters by default and using the greedsearch procedure (cv = 5, the metric for optimization being recall or accuracy).
-9. The better model from each pair (default and optimized models) will be considered for [Staking alghorithm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html) in default hyperparameters and optimized hyperparameters.
-10. Models performans will be estimated considering accuracy, ballanced accuracy, f1-score, recall, precision, recall, ROC-curve and PR-curve
-11. The best model (totally 12 models) will be considered for feature important analysis throught permutation, drop column and shap techniques to find top 20 of features.
+5. [Removing features with low variance](https://scikit-learn.org/stable/modules/feature_selection.html#removing-features-with-low-variance) will be considered for feature selection
+6. For outcome prediction we plan to apply Logistic regression, Random Forest, Support Vector Machine, ..., ... [sklearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) library considering hyperparameters by default and using the greedsearch procedure (cv = 5, the metric for optimization being recall or accuracy).
+7. The better model from each pair (default and optimized models) will be considered for [Staking alghorithm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html) in default hyperparameters and optimized hyperparameters.
+8. Models performans will be estimated considering accuracy, ballanced accuracy, f1-score, recall, precision, recall, ROC-curve and PR-curve.
+9. The best model (totally 12 models) will be considered for feature important analysis throught permutation, drop column and shap techniques to find top 20 of features.
   
 
 
