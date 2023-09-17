@@ -1,4 +1,4 @@
-# Sepsis_prediction
+# Sepsis prediction
 
 ML pipeline (python):
 1. Dataset organization. Aging, sex as well as common for all cohort genes will be considered for data analysis.
